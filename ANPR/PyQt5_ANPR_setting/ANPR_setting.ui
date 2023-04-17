@@ -1,0 +1,4922 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>663</width>
+    <height>727</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <weight>50</weight>
+    <bold>false</bold>
+    <strikeout>false</strikeout>
+    <kerning>true</kerning>
+   </font>
+  </property>
+  <property name="focusPolicy">
+   <enum>Qt::StrongFocus</enum>
+  </property>
+  <property name="windowTitle">
+   <string>ANPR Setting</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>service.png</normaloff>
+    <normalon>service.png</normalon>
+    <activeoff>service.png</activeoff>
+    <activeon>service.png</activeon>service.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>641</width>
+      <height>591</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>ArrowCursor</cursorShape>
+    </property>
+    <property name="focusPolicy">
+     <enum>Qt::StrongFocus</enum>
+    </property>
+    <property name="tabPosition">
+     <enum>QTabWidget::North</enum>
+    </property>
+    <property name="tabShape">
+     <enum>QTabWidget::Rounded</enum>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>35</width>
+      <height>35</height>
+     </size>
+    </property>
+    <property name="elideMode">
+     <enum>Qt::ElideMiddle</enum>
+    </property>
+    <property name="movable">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab_controller">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../../.designer/backup/controller.png</normaloff>../../../../.designer/backup/controller.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>  Controller</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox_controller_config">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>30</y>
+        <width>591</width>
+        <height>481</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Controller configuration  </string>
+      </property>
+      <widget class="QLabel" name="label_host_port1">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>90</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Host Port 1</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_controllerIP">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>50</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string>-- Select IP --</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>-- Select IP --</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.3.15 - Gombak</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.4.15 - Bentong</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.5.5 - Karak 1 </string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.5.6 - Karak 2</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.6.5 - Lanchang</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.7.5 - Temerloh</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.8.5 - Chenor</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.9.5 - Maran</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.10.5 - Srijaya</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.11.5 - Gambang</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.12.5 - Kuantan</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.13.5 - Jabor 1</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>10.20.13.6 - Jabor 2</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_controller_IP">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>50</y>
+         <width>101</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Controller IP</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_host_port1">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>90</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string>-- Select Port 1 --</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>-- Select Port 1 --</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9000</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_host_port2">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>160</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Host Port 2</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_host_port2">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>160</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string>-- Select Port 2 --</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>-- Select Port 2 --</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>1000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>2000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>3000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>4000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>5000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>6000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>7000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>8000</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>9000</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QCheckBox" name="checkBox_host_port2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>130</y>
+         <width>111</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>11</pointsize>
+        </font>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="text">
+        <string>Host Port 2</string>
+       </property>
+       <property name="checked">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_video">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>200</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string>Video</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>Video</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Image</string>
+        </property>
+       </item>
+      </widget>
+      <widget class="QLabel" name="label_src_type">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>200</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Source type</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_toll">
+       <property name="geometry">
+        <rect>
+         <x>50</x>
+         <y>240</y>
+         <width>91</width>
+         <height>17</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Toll</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="comboBox_toll">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>240</y>
+         <width>311</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="cursor">
+        <cursorShape>PointingHandCursor</cursorShape>
+       </property>
+       <property name="mouseTracking">
+        <bool>true</bool>
+       </property>
+       <property name="whatsThis">
+        <string/>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="editable">
+        <bool>false</bool>
+       </property>
+       <property name="currentText">
+        <string>-- Select Toll --</string>
+       </property>
+       <property name="currentIndex">
+        <number>0</number>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+       </property>
+       <property name="minimumContentsLength">
+        <number>5</number>
+       </property>
+       <item>
+        <property name="text">
+         <string>-- Select Toll --</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>KLK</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LPT 1</string>
+        </property>
+       </item>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_camera">
+     <attribute name="icon">
+      <iconset>
+       <normaloff>../../../../.designer/backup/camera.png</normaloff>../../../../.designer/backup/camera.png</iconset>
+     </attribute>
+     <attribute name="title">
+      <string>Camera</string>
+     </attribute>
+     <widget class="QTabWidget" name="tabWidget_camera_tab">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>661</width>
+        <height>551</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>7</number>
+      </property>
+      <widget class="QWidget" name="tab_cam1">
+       <property name="cursor">
+        <cursorShape>ArrowCursor</cursorShape>
+       </property>
+       <attribute name="title">
+        <string>Cam 1</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam1">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 1 </string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam1">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam1">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam1">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_16">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_16">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 1</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam1">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_16">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam1">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam1">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam1</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam1">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam1</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam1">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam1</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam1">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam1">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam1</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_cam2">
+       <attribute name="title">
+        <string>Cam 2</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam2">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 2</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam2">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_17">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_17">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 2</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_17">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam2">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam2</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam2">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam2</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam2</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam2">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam2">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam2</string>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_cam2">
+        <property name="geometry">
+         <rect>
+          <x>-1</x>
+          <y>-11</y>
+          <width>651</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame_cam2</zorder>
+       <zorder>groupBox_anpr_config_cam2</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_cam3">
+       <attribute name="title">
+        <string>Cam 3</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam3">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 3</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam3">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam3">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_18">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_18">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 1</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id__cam3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_18">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam3">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam3</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam3">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam3</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc__cam3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam3</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam3">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam3">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam3</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_cam4">
+       <attribute name="title">
+        <string>Cam 4</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam4">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 4</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam4">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_20">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_20">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 4</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_20">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam4">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam4</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam4">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam4</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam4</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam4">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam4">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam4</string>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_cam4">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>651</width>
+          <height>521</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame_cam4</zorder>
+       <zorder>groupBox_anpr_config_cam4</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_cam5">
+       <attribute name="title">
+        <string>Cam 5</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam5">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 5</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam5">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_21">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_21">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 5</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam5">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_21">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam5">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam5">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam5</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam5">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam5</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam5">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam5</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam5">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam5">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam5</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_cam6">
+       <attribute name="title">
+        <string>Cam 6</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam6">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 6</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam6">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_22">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_22">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 6</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam6">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_22">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam6">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam6">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam6</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam6">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam6</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam6">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam6</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam6">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam6">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam6</string>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>-10</y>
+          <width>651</width>
+          <height>531</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame</zorder>
+       <zorder>groupBox_anpr_config_cam6</zorder>
+      </widget>
+      <widget class="QWidget" name="tab_cam7">
+       <attribute name="title">
+        <string>Cam 7</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam7">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 7</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam7">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam7">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam7">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_23">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_23">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 7</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam7">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_23">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam7">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam7">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam7</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam7">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam7</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam7">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam7</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam7">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam7">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam7</string>
+         </attribute>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_cam8">
+       <attribute name="title">
+        <string>Cam 8</string>
+       </attribute>
+       <widget class="QGroupBox" name="groupBox_anpr_config_cam8">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>20</y>
+          <width>611</width>
+          <height>431</height>
+         </rect>
+        </property>
+        <property name="title">
+         <string>Camera 8</string>
+        </property>
+        <widget class="QLabel" name="label_plaza_id_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>200</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Plaza ID</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_plaza_id_cam8">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>200</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Plaza ID--</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="maxVisibleItems">
+          <number>10</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <property name="frame">
+          <bool>true</bool>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Plaza ID--</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>101 - Gombak</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>100 - Bentong</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>801 - Karak 1 </string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>802 - Lanchang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>803 - Temerloh</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>804 - Chenor</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>805 - Maran</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>806 - Srijaya</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>807 - Gambang</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>808 - Kuantan</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>809 - Jabor 1</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_lane_type_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>160</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane type</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_mode_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>120</y>
+           <width>91</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Mode</string>
+         </property>
+        </widget>
+        <widget class="QComboBox" name="comboBox_lane_type_cam8">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>160</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Lane --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Lane --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Quatriz</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Teras</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QComboBox" name="comboBox_mode_cam8">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>120</y>
+           <width>311</width>
+           <height>21</height>
+          </rect>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>true</bool>
+         </property>
+         <property name="whatsThis">
+          <string/>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="editable">
+          <bool>false</bool>
+         </property>
+         <property name="currentText">
+          <string>-- Select Mode --</string>
+         </property>
+         <property name="currentIndex">
+          <number>0</number>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QComboBox::AdjustToMinimumContentsLength</enum>
+         </property>
+         <property name="minimumContentsLength">
+          <number>5</number>
+         </property>
+         <item>
+          <property name="text">
+           <string>-- Select Mode --</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Online</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Offline</string>
+          </property>
+         </item>
+        </widget>
+        <widget class="QLabel" name="label_1_milesight_24">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>370</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>1. Milesight : rtsp://admin:Milesight12345@10.20.12.31/main</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_komoto_24">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>390</y>
+           <width>481</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>2. Komoto   : rtsp://root:Komoto@172.18.117.115/cam0_0</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_lane_id_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>250</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Lane ID</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_rtsp_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>300</y>
+           <width>81</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>Camera 8</string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_lane_id_cam8">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>240</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>e.g. M01</string>
+         </property>
+        </widget>
+        <widget class="QLabel" name="label_eg_24">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>350</y>
+           <width>67</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>11</pointsize>
+           <italic>true</italic>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLabel{
+color:rgb(186, 189, 182)
+}</string>
+         </property>
+         <property name="text">
+          <string>*Note : </string>
+         </property>
+        </widget>
+        <widget class="QLineEdit" name="lineEdit_rtsp_cam8">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>290</y>
+           <width>380</width>
+           <height>31</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="placeholderText">
+          <string>rtsp://</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_vavc_cam8">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>80</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam8</string>
+         </attribute>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_off_anpr_cam8">
+         <property name="geometry">
+          <rect>
+           <x>240</x>
+           <y>40</y>
+           <width>61</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>OFF</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam8</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_ANPR_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>40</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ANPR</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_vavc_cam8">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>80</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_vavc_cam8</string>
+         </attribute>
+        </widget>
+        <widget class="QLabel" name="label_VAVC_cam8">
+         <property name="geometry">
+          <rect>
+           <x>50</x>
+           <y>80</y>
+           <width>51</width>
+           <height>17</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>VAVC</string>
+         </property>
+        </widget>
+        <widget class="QRadioButton" name="radioButton_on_anpr_cam8">
+         <property name="geometry">
+          <rect>
+           <x>180</x>
+           <y>40</y>
+           <width>51</width>
+           <height>23</height>
+          </rect>
+         </property>
+         <property name="text">
+          <string>ON</string>
+         </property>
+         <property name="checked">
+          <bool>true</bool>
+         </property>
+         <attribute name="buttonGroup">
+          <string notr="true">buttonGroup_anpr_cam8</string>
+         </attribute>
+        </widget>
+       </widget>
+       <widget class="QFrame" name="frame_2">
+        <property name="geometry">
+         <rect>
+          <x>-10</x>
+          <y>-10</y>
+          <width>651</width>
+          <height>531</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>true</bool>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+       </widget>
+       <zorder>frame_2</zorder>
+       <zorder>groupBox_anpr_config_cam8</zorder>
+      </widget>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="Line" name="line_2_vertical_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>641</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_vertical_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>641</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_ANPR_setting_page">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>20</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>ANPR Setting Page</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_save">
+    <property name="geometry">
+     <rect>
+      <x>8</x>
+      <y>680</y>
+      <width>641</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>13</pointsize>
+     </font>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{
+background-color:rgb(186, 189, 182)
+}</string>
+    </property>
+    <property name="text">
+     <string>  Save</string>
+    </property>
+    <property name="icon">
+     <iconset>
+      <normaloff>../../../../.designer/backup/floppy-disk.png</normaloff>../../../../.designer/backup/floppy-disk.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+ <buttongroups>
+  <buttongroup name="buttonGroup_anpr_cam7"/>
+  <buttongroup name="buttonGroup_vavc_cam3"/>
+  <buttongroup name="buttonGroup_vavc_cam2"/>
+  <buttongroup name="buttonGroup_vavc_cam6"/>
+  <buttongroup name="buttonGroup_vavc_cam4"/>
+  <buttongroup name="buttonGroup_anpr_cam6"/>
+  <buttongroup name="buttonGroup_anpr_cam2"/>
+  <buttongroup name="buttonGroup_vavc_cam8"/>
+  <buttongroup name="buttonGroup_anpr_cam3"/>
+  <buttongroup name="buttonGroup_anpr_cam8"/>
+  <buttongroup name="buttonGroup_vavc_cam1"/>
+  <buttongroup name="buttonGroup_anpr_cam4"/>
+  <buttongroup name="buttonGroup_anpr_cam5"/>
+  <buttongroup name="buttonGroup_vavc_cam7"/>
+  <buttongroup name="buttonGroup_vavc_cam5"/>
+  <buttongroup name="buttonGroup_anpr_cam1"/>
+ </buttongroups>
+</ui>

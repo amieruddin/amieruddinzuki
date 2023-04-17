@@ -1,0 +1,31 @@
+#1. create document with application-name.desktop
+#2. copy format below
+
+
+
+
+# for run ANPR
+[Desktop Entry]
+Version=1.0
+Icon=/home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/asset/ANPR.png
+Name=ANPR
+Exec=/usr/bin/bash /home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/anpr
+Terminal=true
+Type=Application
+Categories=Application;
+
+#-----------------------------------------------------------------------------------------
+
+#for run gui setting
+[Desktop Entry]
+Version=1.0
+Icon=/home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/setting_gui/icon/service.png
+Name=ANPR-Setting
+Exec=/usr/bin/bash /home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/setting_gui/setting_gui
+Terminal=false
+Type=Application
+
+
+
+#3. right click --> properties --> permission --> check on the execution button
+#4. right click --> allow launching

@@ -1,0 +1,7 @@
+#!/bin/bash
+cd /home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/setting_gui
+source /home/delloyd/anaconda3/bin/activate /home/delloyd/anaconda3/envs/gui
+pwd
+# python3 run.py
+python3 /home/delloyd/1.ANPR/LPT/2.main8v7-live_at_LPT/setting_gui/run.py
+bash 
