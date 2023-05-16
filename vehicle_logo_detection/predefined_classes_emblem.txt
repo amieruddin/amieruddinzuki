@@ -55,4 +55,5 @@ logo_shacman
 logo_tata
 logo_tata_text
 logo_ud
+logo_volvo
 logo_xcmg
