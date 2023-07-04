@@ -1,6 +1,7 @@
 beige
 black
 blue
+brown
 gray
 green
 orange
@@ -35,6 +36,7 @@ logo_naza
 logo_nissan
 logo_nissan_text
 logo_peugeot
+logo_porsche
 logo_proton
 logo_proton_bulan_bintang
 logo_proton_tiger_shield
