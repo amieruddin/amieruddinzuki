@@ -1,3 +1,10 @@
+'''
+requirement
+1. database
+2. table
+3. pip install mysql mysql_connect
+'''
+
 import mysql.connector
 from datetime import datetime
 
