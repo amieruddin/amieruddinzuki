@@ -1,0 +1,6 @@
+license_plate
+license_plate_taxi
+car
+truck
+bus
+motorcycle
